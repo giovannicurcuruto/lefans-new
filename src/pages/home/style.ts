@@ -7,7 +7,7 @@ export const Teste1 = styled.div`
     border-radius: 0 0 250px 250px;
     background-color: var(--main-background-color);
     z-index: 0;
-    margin-bottom: -250px;
+//    margin-bottom: -250px;
 `;
 
 export const HomePageBody = styled.div`    
@@ -27,7 +27,7 @@ export const Wrapper = styled.div`
     margin: 0 auto;
     max-width:1395.758px;
     width: 1200px;
-    background-color: red;
+    background-color: var(--main-background-color);
     //z-index: 2;
 
 `;
@@ -42,8 +42,6 @@ export const GridFans = styled.div`
 export const GridMedium = styled.div`
     display: grid;
     grid-template-rows: 2fr 2fr 1fr;
-
-
 
 `;
 
@@ -78,10 +76,9 @@ export const ImgBgElefante = styled.img`
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: auto;
-    height: 100%;
+    width: 1650px;
     z-index: 1; /* Certifica-se de que está atrás */
-    max-width: 1400; /* Remove o limite de largura */
+    //max-width: 1400; /* Remove o limite de largura */
     
     
 
