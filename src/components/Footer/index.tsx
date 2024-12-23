@@ -1,12 +1,15 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { FooterAddress, FooterBody, FooterSocialMedia } from "./style";
+import { faFacebook, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
-export default function FooterComponent(){
-    return(
+
+export default function FooterComponent() {
+    return (
         <>
             <FooterBody>
                 <FooterAddress>
                     <div>
-                    R. Comendador Clementino, 344 - Centro
+                        R. Comendador Clementino, 344 - Centro
                     </div>
                     <div>
                         contato@lefanseguros.com.br/administrativo@lefanseguros.com.br
@@ -18,12 +21,14 @@ export default function FooterComponent(){
                 </FooterAddress>
                 <FooterSocialMedia>
                     <div>
-                        Instagram
+                        <FontAwesomeIcon icon={faInstagram} />InstagramInstagram
                     </div>
                     <div>
+                        <FontAwesomeIcon icon={faFacebook} />
                         Facebook
                     </div>
                     <div>
+                        <FontAwesomeIcon icon={faLinkedin} />
                         Linkedin
                     </div>
 
@@ -33,8 +38,8 @@ export default function FooterComponent(){
 
 
             </FooterBody>
-        
-        
+
+
         </>
     )
 }
