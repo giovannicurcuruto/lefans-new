@@ -15,11 +15,12 @@ export default function HomePage() {
     return (
         <>
             <Teste1>
+                <HeaderComponent />
                 <ImgBgElefante src={bgelefa} />
                 <HomePageBody>
 
                     <Wrapper>
-                        <HeaderComponent />
+
 
                         <GridFans >
                             <div>
