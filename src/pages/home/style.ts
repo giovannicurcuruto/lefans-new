@@ -3,9 +3,10 @@ import styled from "styled-components";
 export const Teste1 = styled.div`
     position: relative;
     width:100%;
-    height: 2000px;
+    height: 1500px;
     border-radius: 0 0 250px 250px;
     background-color: var(--main-background-color);
+    
     z-index: 0;
 //    margin-bottom: -250px;
 `;

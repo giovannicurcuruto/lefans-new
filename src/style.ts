@@ -23,7 +23,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-color: var(--main-background-color);
+    background-color: var(--main-footer-color);
     font-family: 'Open Sans', serif,  sans-serif;
     color: var(--mc-grey-text);
   }
