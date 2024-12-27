@@ -64,15 +64,14 @@ export const GridFoto = styled.div`
     grid-template-columns: 2fr 2fr;
     z-index: 3;  
 
-    ImgCris{
-        place-items: center;
-    }
+   
 `;
 
 
 export const GridMediumFotoText = styled.div`
     display: grid;
-    grid-template-rows: 2fr 2fr 2fr 1fr;
+    place-items: center;
+    margin: 0 auto;
 
 `;
 
@@ -85,6 +84,9 @@ export const GridGrafico = styled.div`
     display: grid;
     grid-template-columns: 2fr 2fr;
 
+    img{
+        max-width: 233px;
+    }
 
 `;
 
@@ -101,8 +103,7 @@ export const ImgBgElefante = styled.img`
     transform: translateX(-50%);
     width: 1650px;
     z-index: 1; /* Certifica-se de que está atrás */
-    //max-width: 1400; /* Remove o limite de largura */
-    
+    //max-width: 1400; /* Remove o limite de largura */   
     
 
 `;
