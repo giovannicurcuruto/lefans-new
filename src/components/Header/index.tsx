@@ -12,19 +12,19 @@ export default function HeaderComponent() {
             <MenuContainer>
                 <MenuList>
                     <MenuItem>
-                        <MenuLink href="#">Home</MenuLink>
+                        <MenuLink href="/">Home</MenuLink>
                     </MenuItem>
                     <MenuItem>
-                        <MenuLink href="#">Sobre Nós</MenuLink>
+                        <MenuLink href="/sobre">Sobre Nós</MenuLink>
                     </MenuItem>
                     <MenuItem>
-                        <MenuLink href="#">Produtos</MenuLink>
+                        <MenuLink href="/produtos">Produtos</MenuLink>
                     </MenuItem>
                     <MenuItem>
-                        <MenuLink href="#">Programas</MenuLink>
+                        <MenuLink href="/programas">Programas</MenuLink>
                     </MenuItem>
                     <MenuItem>
-                        <MenuLink href="#">Gestão de Planos</MenuLink>
+                        <MenuLink href="/gestao">Gestão de Planos</MenuLink>
                     </MenuItem>
                 </MenuList>
             </MenuContainer>

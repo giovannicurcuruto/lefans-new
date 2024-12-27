@@ -1,7 +1,4 @@
 // interface HomePageProps {
-
-import FooterComponent from "../../components/Footer";
-import HeaderComponent from "../../components/Header";
 import { GridFans, GridFoto, GridGrafico, GridMedium, GridMediumFotoText, GridMediumGrafico, HomePageBody, ImgBgElefante, ImgCris, ImgFan, Teste1, Wrapper } from "./style";
 
 import elefante from '../../assets/elefante_grande.png';
@@ -15,7 +12,7 @@ export default function HomePage() {
     return (
         <>
             <Teste1>
-                <HeaderComponent />
+                
                 <ImgBgElefante src={bgelefa} />
                 <HomePageBody>
 
@@ -83,7 +80,7 @@ export default function HomePage() {
                 </HomePageBody>
 
             </Teste1>
-            <FooterComponent />
+            
         </>
     )
 }

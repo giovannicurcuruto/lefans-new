@@ -1,13 +1,11 @@
-import HomePage from "./pages/home"
+import RoutesComponent from "./Router"
 import { GlobalStyle } from "./style"
 
 
-function App() {
-  
-
+function App() { 
   return (
     <>
-      <HomePage/>
+      <RoutesComponent/>
       <GlobalStyle/>
     </>
   )

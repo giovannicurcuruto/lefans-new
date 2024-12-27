@@ -4,6 +4,7 @@ import GestaoPage from "./pages/gestao"
 import ProgramasPage from "./pages/programas"
 import ProdutosPage from "./pages/produtos"
 import SobrePage from "./pages/sobrenos"
+import DefaultPage from "./components/DefaultPage"
 
 export const ROUTESPATHS = {
     ROOT: '/',
@@ -15,16 +16,18 @@ export const ROUTESPATHS = {
 }
 
 
-export default function ComponentName(){
-    return(
+export default function RoutesComponent() {
+    return (
         <>
             <BrowserRouter>
                 <Routes>
-                    <Route path={ROUTESPATHS.ROOT} element={<HomePage/>} />
-                    <Route path={ROUTESPATHS.ROOT} element={<GestaoPage/>} />
-                    <Route path={ROUTESPATHS.ROOT} element={<ProgramasPage/>} />
-                    <Route path={ROUTESPATHS.ROOT} element={<ProdutosPage/>} />
-                    <Route path={ROUTESPATHS.ROOT} element={<SobrePage/>} />
+                    <Route path={ROUTESPATHS.ROOT} element={<DefaultPage/>}>
+                        <Route path={ROUTESPATHS.ROOT} element={<HomePage />} />
+                        <Route path={ROUTESPATHS.GESTAO} element={<GestaoPage />} />
+                        <Route path={ROUTESPATHS.PROGRAMAS} element={<ProgramasPage />} />
+                        <Route path={ROUTESPATHS.PRODUTOS} element={<ProdutosPage />} />
+                        <Route path={ROUTESPATHS.SOBRE} element={<SobrePage />} />
+                    </Route>
                 </Routes>
             </BrowserRouter>
         </>
