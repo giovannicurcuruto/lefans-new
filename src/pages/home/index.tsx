@@ -2,7 +2,7 @@
 
 import FooterComponent from "../../components/Footer";
 import HeaderComponent from "../../components/Header";
-import { GridFans, GridFoto, GridGrafico, GridMedium, GridMediumFotoText, GridMediumGrafico, HomePageBody, ImgBgElefante, Teste1, Wrapper } from "./style";
+import { GridFans, GridFoto, GridGrafico, GridMedium, GridMediumFotoText, GridMediumGrafico, HomePageBody, ImgBgElefante, ImgCris, ImgFan, Teste1, Wrapper } from "./style";
 
 import elefante from '../../assets/elefante_grande.png';
 import foto1 from '../../assets/foto1.png';
@@ -17,22 +17,24 @@ export default function HomePage() {
             <Teste1>
                 <ImgBgElefante src={bgelefa} />
                 <HomePageBody>
-                    
+
                     <Wrapper>
                         <HeaderComponent />
 
                         <GridFans >
                             <div>
-                                <img src={elefante} alt="" />
+                                <ImgFan src={elefante} alt="" />
 
                             </div>
                             <GridMedium>
                                 <div>
-                                    <h3>Pessoas, Saúde e Patrimônio</h3>
-                                </div>
-                                <div>Proteção inteligente e inovadora em tudo que importa você!</div>
-                                <div>
-                                    <button>Saiba Mais</button>
+                                    <div>
+                                        <h3>Pessoas, Saúde e Patrimônio</h3>
+                                    </div>
+                                    <div>Proteção inteligente e inovadora em tudo que importa você!</div>
+                                    <div>
+                                        <button>Saiba Mais</button>
+                                    </div>
                                 </div>
                             </GridMedium>
                         </GridFans>
@@ -48,7 +50,7 @@ export default function HomePage() {
                                 </div>
                             </GridMediumFotoText>
                             <div>
-                                <img src={foto1} alt="" />
+                                <ImgCris src={foto1} alt="" />
                             </div>
                         </GridFoto>
                         <GridGrafico>

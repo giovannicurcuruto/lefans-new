@@ -39,9 +39,22 @@ export const GridFans = styled.div`
   z-index: 3;  
 `;
 
-export const GridMedium = styled.div`
+export const GridMedium = styled.div`    
     display: grid;
-    grid-template-rows: 2fr 2fr 1fr;
+    place-items: center;
+    margin: 0 auto;
+    div {
+        margin-bottom: 1rem;
+    }  
+
+    h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+`;
+
+export const ImgFan = styled.img`
+    max-width: 618px;
 
 `;
 
@@ -50,11 +63,21 @@ export const GridFoto = styled.div`
     display: grid;
     grid-template-columns: 2fr 2fr;
     z-index: 3;  
+
+    ImgCris{
+        place-items: center;
+    }
 `;
+
 
 export const GridMediumFotoText = styled.div`
     display: grid;
     grid-template-rows: 2fr 2fr 2fr 1fr;
+
+`;
+
+export const ImgCris = styled.img`
+    max-width: 430px;
 
 `;
 
