@@ -3,7 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 export const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+  
 
   :root {
     --max-width: 1200px;
@@ -27,7 +27,7 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     background-color: var(--main-footer-color);
-    font-family: 'Open Sans', serif,  sans-serif;
+    //font-family: 'Open Sans', serif,  sans-serif !important;
     color: var(--mc-grey-text);
   }
 
