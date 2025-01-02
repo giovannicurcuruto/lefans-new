@@ -53,9 +53,9 @@ export const Item2 = styled.div`
 `;
 
 export const InputStyled = styled.input.attrs({
-    
-    type: 'range',
-  })`
+
+  type: 'range',
+})`
     -webkit-appearance: none;
     width: 100%; /* Largura do slider */
     height: 22px; /* Altura da linha do slider */
@@ -98,7 +98,7 @@ export const InputStyled = styled.input.attrs({
     }
   `;
 
-  export const ButtonProgramas = styled.button`
+export const ButtonProgramas = styled.button`
     position: relative;
     bottom: 510px;    
     margin-left: 125px;
@@ -107,7 +107,7 @@ export const InputStyled = styled.input.attrs({
     color: var(--main-background-color);
   `;
 
-  export const ImgWave2 = styled.img`    
+export const ImgWave2 = styled.img`    
     width: 100%;
     height: 50%;
   `;
