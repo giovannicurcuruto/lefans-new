@@ -1,8 +1,14 @@
 import styled from "styled-components";
 
-export const MenuContainer = styled.nav`
-    background-color: #333;
+export const BackgroundFullDefault = styled.nav`
+    background-color: var(--main-background-color);
+`;
+
+export const MenuContainer = styled.nav`    
     padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: var(--main-background-color);
 
 `;
 
@@ -18,6 +24,10 @@ export const MenuList = styled.ul`
 export const MenuItem = styled.li`
     font-size: 1.2rem;
 
+`;
+
+export const ImgLogoItem = styled.img`
+    width: 104px;
 `;
 
 export const MenuLink = styled.a`
