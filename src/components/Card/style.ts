@@ -21,7 +21,7 @@ export const Icon = styled.img`
 `;
 
 export const Text = styled.div`
-  font-family: Arial, sans-serif;
+  
   font-size: 14px;
   color: #333;
   text-align: center;
