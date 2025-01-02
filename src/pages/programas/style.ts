@@ -99,9 +99,15 @@ export const InputStyled = styled.input.attrs({
   `;
 
   export const ButtonProgramas = styled.button`
-    margin-bottom: 300px;
+    position: relative;
+    bottom: 510px;    
     margin-left: 125px;
     border-radius: 25px;
     font-style: italic;
     color: var(--main-background-color);
+  `;
+
+  export const ImgWave2 = styled.img`    
+    width: 100%;
+    height: 50%;
   `;

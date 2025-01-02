@@ -5,8 +5,9 @@ import img_assis_saude from '../../assets/assistente_saude.png';
 import img_maternar from '../../assets/maternar.png';
 import img_saude_foco from '../../assets/saude_foco.png';
 import img_saude_men from '../../assets/saudemental.png';
+import img_wave from '../../assets/g154.png';
 
-import { BackgroundFullDefault, ButtonProgramas, DivSlider, InputStyled, MainText, Wrapper } from "./style";
+import { BackgroundFullDefault, ButtonProgramas, DivSlider, ImgWave2, InputStyled, MainText, Wrapper } from "./style";
 import { useRef, useState } from "react";
 
 export default function ProgramasPage() {
@@ -108,8 +109,9 @@ export default function ProgramasPage() {
                         max={3}
                     />
 
-
+                    <ImgWave2 src={img_wave}  />
                     <ButtonProgramas>Quero conversar com um especialista.</ButtonProgramas>
+
                 </Wrapper>
             </BackgroundFullDefault>
         </>
