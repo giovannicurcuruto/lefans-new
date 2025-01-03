@@ -26,7 +26,7 @@ export default function ProgramasPage() {
         slidesToShow: 3,
         slidesToScroll: 1,
         afterChange: () => setUpdateCount(updateCount + 1),
-        beforeChange: (current: number, next: number) => setSlideIndex(next)
+        beforeChange: ( next: number) => setSlideIndex(next)
     };
 
 

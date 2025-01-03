@@ -5,23 +5,25 @@ interface BackgroundTestProps {
 }
 
 export const BackgroundTest = styled.div<BackgroundTestProps>`
-    position: relative;
+    
     background-image: url(${(props) => props.backgroundImage});
     background-repeat: no-repeat;
     background-size: cover;  
-    z-index: 2;
-    height: 1785px;
-    width: 100%; 
-    top: ;
+    
+    
+    
+    
 `;
 
 export const Wrapped = styled.div`
     position: relative;
     z-index: 1;
     padding-left: 198px;
-    //background-color: var(--main-background-color);
+    background-color: var(--main-background-color);
     //background-color: red;
     border-radius: 0 0 250px 0;
+
+ 
     
 `;
 
@@ -42,6 +44,8 @@ export const MainText = styled.div`
 `;
 
 export const Item1 = styled.div`
+    position: relative;
+    z-index: 3;
     padding-top: 155px;
 
     h3{
@@ -54,6 +58,8 @@ export const Item1 = styled.div`
 `;
 
 export const Item12 = styled.div`
+    position: relative;
+    z-index: 3;
  
     h3{
         font-size: 53px;
@@ -66,6 +72,8 @@ export const Item12 = styled.div`
 
 
 export const GridItem1 = styled.div`
+    position: relative;
+    z-index: 3;
     display: grid;
     grid-template-columns: 0.4fr 2fr;
     padding-top: 65px;
@@ -83,6 +91,8 @@ export const GridItem1 = styled.div`
 `;
 
 export const Item2 = styled.div`
+    position: relative;
+    z-index: 3;
     h3{
         font-size: 65px;
         font-style: italic;
