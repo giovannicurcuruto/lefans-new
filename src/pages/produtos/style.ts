@@ -4,28 +4,53 @@ interface BackgroundTestProps {
     backgroundImage: string;
 }
 
+
+
+export const BackgroundFullDefault = styled.div`
+    background-color: var(--main-background-color);
+    padding-top:500px;
+`;
+
+export const BackgroundImageDefault = styled.div<BackgroundTestProps>`
+    
+    background-image: url(${(props) => props.backgroundImage});
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 1786px;
+
+`;
+
+
+
+
+
+
 export const BackgroundTest = styled.div<BackgroundTestProps>`
     
     background-image: url(${(props) => props.backgroundImage});
     background-repeat: no-repeat;
-    background-size: cover;  
-    
-    
-    
+    background-size: cover;    
     
 `;
 
 export const Wrapped = styled.div`
-    position: relative;
-    z-index: 1;
     padding-left: 198px;
-    background-color: var(--main-background-color);
-    //background-color: red;
-    border-radius: 0 0 250px 0;
+    
+
+`;
+
+
+// export const Wrapped = styled.div`
+//     position: relative;
+//     z-index: 1;
+//     padding-left: 198px;
+//     background-color: var(--main-background-color);
+//     //background-color: red;
+//     border-radius: 0 0 250px 0;
 
  
     
-`;
+// `;
 
 export const MainText = styled.div`
     position: relative;

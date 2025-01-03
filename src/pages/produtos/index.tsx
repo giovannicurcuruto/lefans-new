@@ -1,16 +1,43 @@
-import { BackgroundTest, GridItem1, Item1, Item12, Item2, MainText, Wrapped } from "./style";
-import img_heart from '../../assets/mao_coracao.png';
-import img_dente from '../../assets/dente.png';
-import img_chuva from '../../assets/pessoas_chuva.png';
-import img_chave from '../../assets/shield.png';
+import { BackgroundFullDefault, BackgroundImageDefault, MainText, Wrapped } from "./style";
+// import img_heart from '../../assets/mao_coracao.png';
+// import img_dente from '../../assets/dente.png';
+// import img_chuva from '../../assets/pessoas_chuva.png';
+// import img_chave from '../../assets/shield.png';
 
 import img1 from '../../assets/silueta4.png';
+
 
 
 export default function ProdutosPage() {
     return (
         <>
-            <BackgroundTest backgroundImage={img1}>
+            <BackgroundFullDefault>
+                <BackgroundImageDefault backgroundImage={img1}>
+                    <Wrapped>
+                        <MainText>
+                            <h2>Soluções personalizadas para cada necessidade</h2>
+                            <p>Como pilar estratégico, oferecemos produtos e serviços que garantem o melhor relação custo-beneficioo. Conheça: </p>
+
+                        </MainText>
+
+                        
+
+                    </Wrapped>
+
+
+
+                </BackgroundImageDefault>
+            </BackgroundFullDefault>
+
+
+
+        </>
+    )
+}
+
+/**
+ * 
+ * <BackgroundTest backgroundImage={img1}>
                 <Wrapped>
 
                     <MainText>
@@ -89,8 +116,5 @@ export default function ProdutosPage() {
 
                 </Wrapped>
             </BackgroundTest >
-
-
-        </>
-    )
-}
+ * 
+*/
