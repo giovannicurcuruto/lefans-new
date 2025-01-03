@@ -8,7 +8,7 @@ export const GlobalStyle = createGlobalStyle`
   :root {
     --max-width: 1200px;
 
-    --main-background-color: #0E1138;
+    --main-background-color: #152943;
     --main-footer-color: #CBCBB5;
 
     --primary-color: #262C65;
@@ -31,9 +31,9 @@ export const GlobalStyle = createGlobalStyle`
     color: var(--mc-grey-text);
   }
 
-  li {
+  /* li {
     list-style: none;
-  }
+  } */
 
   a {
     text-decoration: none;
