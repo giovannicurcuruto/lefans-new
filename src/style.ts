@@ -6,7 +6,7 @@ export const GlobalStyle = createGlobalStyle`
   
 
   :root {
-    --max-width: 1200px;
+    --max-width: 1920px;
 
     --main-background-color: #152943;
     --main-footer-color: #CBCBB5;

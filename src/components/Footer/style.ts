@@ -15,9 +15,25 @@ export const FooterBody = styled.div`
 `;
 
 export const FooterAddress = styled.div`
+    text-align: center;
 
 `;
 
 export const FooterSocialMedia = styled.div`
+    max-width: var(--max-width);
+    font-size: 16px;
 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    
+    img{
+        width: 199px;
+
+    }
+
+   
+`;
+
+export const SpanSocialMedia = styled.span`
+    margin-left: 10px;
 `;
