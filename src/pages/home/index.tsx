@@ -1,5 +1,5 @@
 // interface HomePageProps {
-import { GridFans, GridFoto, GridGrafico, GridMedium, GridMediumFotoText, GridMediumGrafico, HomePageBody, ImgBgElefante, ImgCris, ImgFan, Teste1, Wrapper } from "./style";
+import { BackgroundDetails, BackgroundElefante, ButtonBlue, GridMediumGrafico, ImgCris, ImgElefante, ImgGrafico, LastButton, LastGrid, MainGrid, MainText, MidGrid, MidText, Wrapped } from "./style";
 
 import elefante from '../../assets/elefante_grande.png';
 import foto1 from '../../assets/foto1.png';
@@ -11,8 +11,70 @@ import bgelefa from '../../assets/sihueta.png';
 export default function HomePage() {
     return (
         <>
-            <Teste1>
-                
+            <BackgroundDetails>
+                <BackgroundElefante backgroundImage={bgelefa}>
+                    <Wrapped>
+                        <MainGrid>
+                            <ImgElefante src={elefante} />
+                            <MainText>
+                                <div>
+                                    <h3>Pessoas, Saúde e Patrimônio</h3>
+                                </div>
+                                <div>
+                                    <p>Proteção inteligente e inovadora em tudo que importa você!</p></div>
+                                <div>
+                                    <ButtonBlue>Saiba Mais</ButtonBlue>
+                                </div>
+                            </MainText>
+                        </MainGrid>
+                        <MidGrid>
+                            <MidText>
+                                <div>
+                                    <h3>Cuidando das pessoas, protegendo empresas.</h3>
+                                </div>
+                                <p>A Lefan trabalha de forma integral identificando gerenciando e acompanahdno riscos relacionados à saúde corporativa, de pessoas e de patrimónios.</p>
+                                <p>Atuamos de forma estratégica, gerando indicadores para uma melhor tomada de decisão, com foco em mapear as reais necessidades para sua empresa. </p>
+                                <div>
+                                    <ButtonBlue>Se você é profissional de RH, <br/> ENTRE EM CONTATO!</ButtonBlue>
+                                </div>
+                            </MidText>
+                            <ImgCris src={foto1} />
+                        </MidGrid>
+                        <LastGrid>
+                            <ImgGrafico src={grafico1}/>
+                            <GridMediumGrafico>
+                                <div>
+                                    <h3>Decisões baseadas em dados</h3>
+                                </div>
+                                <div>
+                                    Nosso objetivo é entregar soluções completas em Planos de Saúde e Seguros, com relatórios personalizados e dashboards intuitivos para insights entratégicos e redução de custos.
+                                </div>
+                                <div>                                    
+                                    Os dados fornecidos ajudam na tomada de decisão e na prevenção de perdas de investimentos, tornando o plano de saúde da sua empresa mais sustentável
+                                </div>
+                                <div>
+                                    <LastButton> Mande uma mensagem agora!</LastButton>
+                                </div>
+                            </GridMediumGrafico>
+
+
+
+
+                        </LastGrid>
+
+
+                    </Wrapped>
+
+                </BackgroundElefante>
+
+            </BackgroundDetails>
+
+        </>
+    )
+}
+
+
+/**<Teste1>                
                 <ImgBgElefante src={bgelefa} />
                 <HomePageBody>
 
@@ -79,8 +141,4 @@ export default function HomePage() {
 
                 </HomePageBody>
 
-            </Teste1>
-            
-        </>
-    )
-}
+            </Teste1> */

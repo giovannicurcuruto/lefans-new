@@ -11,17 +11,21 @@ export const FooterBody = styled.div`
     place-items: center;
     color: black;
     z-index: 1;
+    color: #1f426b;
 
 `;
 
 export const FooterAddress = styled.div`
     text-align: center;
+    font-weight: 800;
+    font-size: 25px;
+    
 
 `;
 
 export const FooterSocialMedia = styled.div`
     max-width: var(--max-width);
-    font-size: 16px;
+    font-size: 23px;
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -29,9 +33,7 @@ export const FooterSocialMedia = styled.div`
     img{
         width: 199px;
 
-    }
-
-   
+    }   
 `;
 
 export const SpanSocialMedia = styled.span`

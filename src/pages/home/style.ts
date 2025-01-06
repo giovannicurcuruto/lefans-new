@@ -1,111 +1,148 @@
 import styled from "styled-components";
 
-export const Teste1 = styled.div`
-    position: relative;
-    width:100%;
-    height: 1500px;
+interface BackgroundImageFont{
+    backgroundImage: string
+}
+
+
+export const BackgroundDetails = styled.div`
+    background-color: var(--main-background-color);
     border-radius: 0 0 250px 250px;
-    background-color: var(--main-background-color);
+    height: 2800px;
+    width:100%;
     
-    z-index: 0;
-//    margin-bottom: -250px;
 `;
 
-export const HomePageBody = styled.div`    
+//url(${(props) => props.backgroundImage});
+//preciso dar um padding/margin/position para 426
+export const BackgroundElefante = styled.div<BackgroundImageFont>`
+    background-image: url(${(props) => props.backgroundImage});
+    background-position: center;
+    background-repeat: no-repeat;
     position: relative;
-    
-    margin: 0 auto;
-    max-width:1395.758px;
-    width: 1200px;
-    
+    top: 50px;
+    height: 1632px;
     
 `;
 
-export const Wrapper = styled.div`
-    display: grid;
+export const Wrapped = styled.div`
+    padding-left: 80px;
+    padding-right: 80px;
+
+`;
+
+export const MainGrid = styled.div`
     position: relative;
-    place-items: center;
-    margin: 0 auto;
-    max-width:1395.758px;
-    width: 1200px;
-    background-color: var(--main-background-color);
-    //z-index: 2;
-
-`;
-
-export const GridFans = styled.div`
-  position: relative;
-  display: grid;
-  grid-template-columns: 2fr 2fr;
-  z-index: 3;  
-`;
-
-export const GridMedium = styled.div`    
-    display: grid;
-    place-items: center;
-    margin: 0 auto;
-    div {
-        margin-bottom: 1rem;
-    }  
-
-    h3 {
-        font-size: 1.5rem;
-        margin-bottom: 0.5rem;
-    }
-`;
-
-export const ImgFan = styled.img`
-    max-width: 618px;
-
-`;
-
-export const GridFoto = styled.div`
-    position: relative;
+    top:100px;
     display: grid;
     grid-template-columns: 2fr 2fr;
-    z-index: 3;  
+`;
 
-   
+export const ImgElefante = styled.img`
+    width: 779px;
+    height: 657px;
+    
 `;
 
 
-export const GridMediumFotoText = styled.div`
+export const MainText = styled.div`
     display: grid;
-    place-items: center;
-    margin: 0 auto;
+    padding-top: 243px;
+    //place-items: center;
+    //margin: 0 auto;
+    height: 300px;
+    h3{
+        font-size: 55px;
+        font-style: italic;
+        margin-bottom: 15px;
+    }
 
+    p {
+        max-width: 670px;
+        font-size: 41px;
+        font-style: italic;
+        margin-bottom: 20px;
+    }
+
+   
+
+`;
+
+export const ButtonBlue = styled.button`
+    background-color: var(--main-background-color);
+    color: var(--secondary-color);
+    font-size: 40px;
+    font-style: italic;
+    border-radius: 50px;
+`;
+
+export const MidGrid = styled.div`
+
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+
+
+
+`;
+
+export const MidText = styled.div`
+    padding-top: 170px;
+    font-style: italic;
+
+    h3 {
+       font-size: 54px;
+       margin-bottom: 45px;
+    }
+
+    p{
+        font-size: 32px;
+        margin-bottom: 25px;
+    }
+
+    button{
+        margin-left: 180px;
+    }
+    
 `;
 
 export const ImgCris = styled.img`
-    max-width: 430px;
+    //max-width: 430px;
+    padding-left:200px
 
 `;
 
-export const GridGrafico = styled.div`
+export const LastGrid = styled.div`
+    padding-top: 310px;
     display: grid;
-    grid-template-columns: 2fr 2fr;
+    grid-template-columns: 0.8fr 2fr;
+    
 
-    img{
-        max-width: 233px;
-    }
-
+    
 `;
 
 export const GridMediumGrafico = styled.div`
+    display: grid;
     grid-template-rows: 2fr 2fr 2fr 1fr;
+    max-width: 1100px;
+    padding-left: 120px;
+    h3{
+        font-size: 54px;
+    }
+    
+    font-size: 32px;
+    font-style: italic;    
 
 `;
 
-export const ImgBgElefante = styled.img`
-    
-    position: absolute; /* Para posicionamento relativo ao pai */
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 1650px;
-    z-index: 1; /* Certifica-se de que está atrás */
-    //max-width: 1400; /* Remove o limite de largura */   
-    
-
+export const LastButton = styled.button`
+    font-size: 32px;
+    font-style: italic;
+    border-radius: 50px;
+    color: var(--main-background-color);
 `;
+
+export const ImgGrafico = styled.img`
+    width: 450px;
+`;
+
 
