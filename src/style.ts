@@ -11,6 +11,7 @@ export const GlobalStyle = createGlobalStyle`
     --main-background-color: #152943;
     --main-footer-color: #CBCBB5;
 
+    --main-backgroundLightColor: #1e416b;
     --primary-color: #262C65;
     --secondary-color: #BE945E;
     --mc-grey-strong: #323233;

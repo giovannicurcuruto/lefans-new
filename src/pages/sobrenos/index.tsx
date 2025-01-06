@@ -1,15 +1,49 @@
-import CountItensComponent from "../../components/CountItens";
-import { BackgroundFullDefault, CentralSection, GridValues, Imgbackground, ImgLeft, Item1Grid, Item2Grid, Item3Grid, MainText, TextCentralSection, Wrapper } from "./style";
+//import CountItensComponent from "../../components/CountItens";
+import { BackgroundColorFullDefault, BackgroundFullDefault, BackgroundImg, BackgroundLightFullDefault, CenterWrapper, Imgbackground, ImgLeft, MainText, TextCentralSection, Wrapper } from "./style";
 import img_cris from '../../assets/foto1.png';
-import img_1 from '../../assets/sihueta2.png';
-import img_alvo from '../../assets/alvo.png';
-import img_visao from '../../assets/olho.png';
-import img_mao from '../../assets/maos.png';
+
+//import img_alvo from '../../assets/alvo.png';
+//import img_visao from '../../assets/olho.png';
+//import img_mao from '../../assets/maos.png';
+
+import backgroundElefant from '../../assets/sihueta2.png';
+import { ImgCris } from "../home/style";
 
 export default function SobrePage() {
     return (
         <>
-            <BackgroundFullDefault>
+            <BackgroundLightFullDefault>
+                <BackgroundColorFullDefault>
+                    <MainText>
+                        <h2>A Natureza nos inspira!</h2>
+
+                        <p>Somos a Lefan, uma corretora de seguros inspirada no elefante, símbolo de força, proteção, sabedoria e afeto. Nossa essência é proteger e orientar nossos clientes com soluções inteligentes, garantindo a segurança dos seus bens e de suas vidas.</p>
+                        <br />
+                        <p>Especializada em consultoria de seguros e planos de saúde, atuamos nos segmentos de Pessoas, Saúde e Patrimônio, oferecendo proteção pessoal e familiar, investimentos patrimoniais e gestão de riscos. </p>
+                        <br />
+                        <p>Nossa abordagem é centrada nas necessidades reais de cada cliente proporcionando um atendimento personlaizado e consultivo. </p>
+                    </MainText>
+
+                    <BackgroundFullDefault backgroundImage={backgroundElefant}>
+
+
+                        <Imgbackground src={img_cris}></Imgbackground>
+
+
+
+
+
+
+
+                    </BackgroundFullDefault>
+                </BackgroundColorFullDefault>
+            </BackgroundLightFullDefault>
+
+        </>
+    )
+}
+
+{/* <BackgroundFullDefault>
                 <Wrapper>
                     <MainText>
                         <h2>A Natureza nos inspira!</h2>
@@ -71,8 +105,4 @@ export default function SobrePage() {
                     <CountItensComponent />
                 </Wrapper>
                 
-            </BackgroundFullDefault>
-
-        </>
-    )
-}
+            </BackgroundFullDefault> */}
