@@ -81,8 +81,6 @@ export const MidGrid = styled.div`
     display: grid;
     grid-template-columns: 2fr 2fr;
 
-
-
 `;
 
 export const MidText = styled.div`
