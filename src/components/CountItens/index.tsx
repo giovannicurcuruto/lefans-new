@@ -28,12 +28,12 @@ export default function CountItensComponent() {
             <GridCounterdiv >
                 {/* Primeiro número animado */}
             
-                <div>Empresas Transformadas</div>
+                <div><h3>Empresas Transformadas</h3></div>
                 <motion.div
                     style={{
-                        fontSize: '2rem',
+                        fontSize: '55px',
                         fontWeight: 'bold',
-                        color: '#007bff',
+                        color: '#BE945E',
                     }}
                 >
                     {displayValue1}
@@ -42,9 +42,9 @@ export default function CountItensComponent() {
                 {/* Segundo número animado */}
                 <motion.div
                     style={{
-                        fontSize: '2rem',
+                        fontSize: '55px',
                         fontWeight: 'bold',
-                        color: '#28a745',
+                        color: '#BE945E',
                     }}
                 >
                     {displayValue2}
