@@ -1,9 +1,10 @@
 // interface HeaderComponentProps {
 
-import { BackgroundFullDefault, ImgLogoItem, MenuContainer, MenuItem, MenuLink, MenuList } from "./style";
+import { BackgroundFullDefault, ImgLogoItem, MenuContainer, MenuItem,  MenuList, StyledLink } from "./style";
 
 import img_logo from '../../assets/logo.png';
 import { useLocation } from "react-router-dom";
+import { ROUTESPATHS } from "../../Router";
 
 // }
 export default function HeaderComponent() {
@@ -17,54 +18,55 @@ export default function HeaderComponent() {
                             <ImgLogoItem src={img_logo} />
                         </MenuItem>
                         <MenuItem>
-                            <MenuLink
-                                href="/"
+                            <StyledLink
+                                to={ROUTESPATHS.ROOT}
                                 style={location.pathname === '/' ? {
                                     color: '#BE945E',
                                     fontWeight: 'bold'
                                 } : {}}>
                                 Home
-                            </MenuLink>
+                            </StyledLink>
                         </MenuItem>
                         <MenuItem>
-                            <MenuLink
-                                href="/sobre" style={location.pathname === '/sobre' ? {
+                            <StyledLink
+                                to={ROUTESPATHS.SOBRE} 
+                                style={location.pathname === '/sobre' ? {
                                     color: '#BE945E',
                                     fontWeight: 'bold'
                                 } : {}}>
                                 Sobre Nós
-                            </MenuLink>
+                            </StyledLink>
                         </MenuItem>
                         <MenuItem>
-                            <MenuLink
-                                href="/produtos"
+                            <StyledLink
+                                to={ROUTESPATHS.PRODUTOS}
                                 style={location.pathname === '/produtos' ? {
                                     color: '#BE945E',
                                     fontWeight: 'bold'
                                 } : {}}>
                                 Produtos
-                            </MenuLink>
+                            </StyledLink>
                         </MenuItem>
                         <MenuItem>
-                            <MenuLink
-                                href="/programas"
+                            <StyledLink
+                                to={ROUTESPATHS.PROGRAMAS}
                                 style={location.pathname === '/programas' ? {
                                     color: '#BE945E',
                                     fontWeight: 'bold'
                                 } : {}}>
                                 Programas
-                            </MenuLink>
+                            </StyledLink>
 
                         </MenuItem>
                         <MenuItem>
-                            <MenuLink
-                                href="/gestao"
+                            <StyledLink
+                                to={ROUTESPATHS.GESTAO}
                                 style={location.pathname === '/gestao' ? {
                                     color: '#BE945E',
                                     fontWeight: 'bold'
                                 } : {}}>
                                 Gestão de Planos
-                            </MenuLink>
+                            </StyledLink>
                         </MenuItem>
                     </MenuList>
                 </MenuContainer>

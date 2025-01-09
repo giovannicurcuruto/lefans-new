@@ -1,27 +1,12 @@
 import {
   BackgroundFullDefault,
   ContainerImage,
+  DivButton,
   MainText,
-  NumDiv1,
-  NumDiv2,
-  NumDiv3,
-  NumDiv4,
-  Secdiv1,
-  Secdiv1Body,
-  Secdiv1Titulo,
-  Secdiv2,
-  Secdiv2Body,
-  Secdiv2Titulo,
-  Secdiv3,
-  Secdiv3Body,
-  Secdiv3Titulo,
-  Secdiv4,
-  Secdiv4Body,
-  Secdiv4Titulo,
   Wrapped
 } from "./style";
 
-import img1 from '../../assets/fluxo.png';
+import img1 from '../../assets/fluxofull.png';
 
 
 export default function GestaoPage() {
@@ -34,7 +19,19 @@ export default function GestaoPage() {
             <p>Oferecemos um serviço de gestão e consultoria conjunta de planos de saúde, que analisa dados e foca ações na prevenção e bem-estar do colaborador para consequente redução de sinistralidades. Dessa forma, sua empresa pode realizar a renovação ou adequações do plano de saúde corporativo ideal, de acordo com dados reais de utilização.</p>
           </MainText>
           <ContainerImage backgroundImage={img1}>
-            <Secdiv1>
+          </ContainerImage>
+
+          <DivButton>
+            <button>Quero conversar com um especialista.</button>
+          </DivButton>
+        </Wrapped>
+      </BackgroundFullDefault>
+
+    </>
+  )
+}
+
+/*            <Secdiv1>
               <NumDiv1>1</NumDiv1>
               <Secdiv1Titulo>Contratação do Plano ideal</Secdiv1Titulo>
 
@@ -78,17 +75,6 @@ export default function GestaoPage() {
                 transparência no processo.
               </Secdiv4Body>
             </Secdiv4>
+*/
 
 
-
-          </ContainerImage>
-
-
-          <button>Quero conversar com um especialista.</button>
-
-        </Wrapped>
-      </BackgroundFullDefault>
-
-    </>
-  )
-}

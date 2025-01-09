@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { CardContainer, ExpandButton, Icon, List, Text } from "./style";
+import { CardContainer, ExpandButton, Icon, List, Text, WrappedCard } from "./style";
 
 interface CardComponentProps {
     titulo: string,
@@ -14,27 +14,31 @@ export default function CardComponent({ titulo, paragrafo, img, itens = [] }: Ca
 
     return (
         <>
-            <CardContainer expanded={expanded}>
-                <Icon src={img} alt={titulo} />
-                <Text>
-                    <strong>{titulo}</strong>
-                    {expanded && (
-                        <>
-                            <p>{paragrafo}</p>
-                            {itens.length > 0 && (
-                                <List>
-                                    {itens.map((item: string, index: number) => (
-                                        <li key={index}>{item}</li>
-                                    ))}
-                                </List>
-                            )}
-                        </>
-                    )}
-                </Text>
-            </CardContainer>
-            <ExpandButton onClick={() => setExpanded(!expanded)}>
-                {expanded ? "−" : "+"}
-            </ExpandButton>
+            <WrappedCard>
+                <CardContainer expanded={expanded}>
+
+                    <Icon src={img} alt={titulo} />
+                    <Text>
+                        <strong>{titulo}</strong>
+                        {expanded && (
+                            <>
+                                <p>{paragrafo}</p>
+                                {itens.length > 0 && (
+                                    <List>
+                                        {itens.map((item: string, index: number) => (
+                                            <li key={index}>{item}</li>
+                                        ))}
+                                    </List>
+                                )}
+                            </>
+                        )}
+                    </Text>
+
+                </CardContainer>
+                <ExpandButton onClick={() => setExpanded(!expanded)}>
+                    {expanded ? "−" : "+"}
+                </ExpandButton>
+            </WrappedCard>
 
 
         </>

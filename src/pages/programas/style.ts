@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+interface BackgroundWave {
+  backgroundImage: string
+}
+
 export const BackgroundFullDefault = styled.div`
     background-color: var(--main-background-color);
 
@@ -7,27 +11,29 @@ export const BackgroundFullDefault = styled.div`
 
 export const Wrapper = styled.div`
     margin: 0 auto;
-    max-width: 1395.758px;
-    width: 1200px;
+    //min-height: 100vh;
+    //overflow: hidden;
+    //position: relative;    
+    height: 1900px;
     background-color: var(--main-background-color);
 `;
 
 export const MainText = styled.div`
     padding: 125px;
-    max-width: 840px;
+    max-width: 1100px;
+    font-style: italic;
 
     h3 {
-        font-size: 41px;
+        font-size: 53px;
         color: var(--secondary-color);
         padding-bottom: 30px;
+        
     }
     p {
-        font-size: 22px;
-        font-style: italic;
+        font-size: 29px;
+        
     }
     
-
-
 `;
 
 
@@ -99,15 +105,35 @@ export const InputStyled = styled.input.attrs({
   `;
 
 export const ButtonProgramas = styled.button`
-    position: relative;
+    
     bottom: 510px;    
-    margin-left: 125px;
+    margin-left: 115px;
     border-radius: 25px;
+    font-size:37px;
     font-style: italic;
     color: var(--main-background-color);
   `;
 
-export const ImgWave2 = styled.img`    
+export const ImgWave1 = styled.div<BackgroundWave>`    
+    position: absolute;
+    background-image: url(${props => props.backgroundImage});
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index:1000;
     width: 100%;
-    height: 50%;
+    height: 782px;
+    top: 250px;
+    
   `;
+  
+  export const ImgWave2 = styled.div<BackgroundWave>`    
+  position: absolute;
+  background-image: url(${props => props.backgroundImage});
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index:1000;
+  width: 100%;
+  height: 782px;
+  top: calc(100% + 650px);
+  
+`;

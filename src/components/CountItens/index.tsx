@@ -1,6 +1,6 @@
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { useEffect } from "react";
-import { GridCounterdiv } from "./style";
+import { GridCounterdiv, Itemdiv } from "./style";
 
 export default function CountItensComponent() {
     // Motion values para os números
@@ -27,28 +27,33 @@ export default function CountItensComponent() {
         <>
             <GridCounterdiv >
                 {/* Primeiro número animado */}
-            
-                <div><h3>Empresas Transformadas</h3></div>
-                <motion.div
-                    style={{
-                        fontSize: '55px',
-                        fontWeight: 'bold',
-                        color: '#BE945E',
-                    }}
-                >
-                    {displayValue1}
-                </motion.div>
 
+                <div><h3>Empresas Transformadas</h3></div>
+                <Itemdiv>
+                    <h4>Vidas Impactadas</h4>
+                    <motion.div
+                        style={{
+                            fontSize: '55px',
+                            fontWeight: 'bold',
+                            color: '#BE945E',
+                        }}
+                    >
+                        {displayValue1}
+                    </motion.div>
+                </Itemdiv>
                 {/* Segundo número animado */}
-                <motion.div
-                    style={{
-                        fontSize: '55px',
-                        fontWeight: 'bold',
-                        color: '#BE945E',
-                    }}
-                >
-                    {displayValue2}
-                </motion.div>
+                <Itemdiv>
+                    <h4>Minutos Poupados</h4>
+                    <motion.div
+                        style={{
+                            fontSize: '55px',
+                            fontWeight: 'bold',
+                            color: '#BE945E',
+                        }}
+                    >
+                        {displayValue2}
+                    </motion.div>
+                </Itemdiv>
             </GridCounterdiv>
         </>
     );

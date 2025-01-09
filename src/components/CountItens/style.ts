@@ -8,9 +8,18 @@ export const GridCounterdiv = styled.div`
        
     padding-left: 160px;
     padding-right: 333px;
+    padding-top: 100px;
     width: 100%;
 
     h3{
-        font-size: 53px;
+        font-size: 48px;
     }
 `;
+
+export const Itemdiv = styled.div`
+    margin: 0 auto;
+    text-align: center;
+    h4{
+        font-size: 24px;
+    }
+`

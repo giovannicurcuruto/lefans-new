@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const BackgroundFullDefault = styled.nav`
@@ -42,3 +43,16 @@ export const MenuLink = styled.a`
     }
 
 `;
+
+export const StyledLink = styled(Link)`
+ color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+
+    &:hover{
+        background-color:#555;
+        transition:backgrond-color 0.3s ease;
+    }
+
+`

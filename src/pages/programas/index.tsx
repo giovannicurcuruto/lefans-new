@@ -7,7 +7,7 @@ import img_saude_foco from '../../assets/saude_foco.png';
 import img_saude_men from '../../assets/saudemental.png';
 import img_wave from '../../assets/g154.png';
 
-import { BackgroundFullDefault, ButtonProgramas, DivSlider, ImgWave2, InputStyled, MainText, Wrapper } from "./style";
+import { BackgroundFullDefault, ButtonProgramas, DivSlider, ImgWave1, ImgWave2, InputStyled, MainText, Wrapper } from "./style";
 import { useRef, useState } from "react";
 
 export default function ProgramasPage() {
@@ -26,13 +26,14 @@ export default function ProgramasPage() {
         slidesToShow: 3,
         slidesToScroll: 1,
         afterChange: () => setUpdateCount(updateCount + 1),
-        beforeChange: ( next: number) => setSlideIndex(next)
+        beforeChange: (next: number) => setSlideIndex(next)
     };
 
 
     return (
-        <>
+        <><ImgWave1 backgroundImage={img_wave} />
             <BackgroundFullDefault>
+
                 <Wrapper>
                     <MainText>
                         <h3>Foco no colaborador para maior produtividade</h3>
@@ -74,15 +75,16 @@ export default function ProgramasPage() {
                                         img={img_acolher} />
                                 </div>
 
-                                <div><CardComponent
-                                    titulo={"Assistente de Saúde"}
-                                    paragrafo={"Estamos disponíveis para oferecer uma avaliação de saúde completa para os colaboradores, contando com uma equipe de profissionais especializados. Nossos serviços incluem:"}
-                                    img={img_assis_saude}
-                                    itens={[
-                                        'Aferição de pressão arterial e glicemia: monitoramento regular para garantir o bem-estar da sua equipe.',
-                                        'Orientações sobre saúde: disponibilizamos informações e dicas sobre cuidados preventivos e hábitos saudáveis.',
-                                        'Agendamento de consultas e exames: agendamento de consultas e exames no melhor dia e horário para sua equipe.'
-                                    ]} />
+                                <div>
+                                    <CardComponent
+                                        titulo={"Assistente de Saúde"}
+                                        paragrafo={"Estamos disponíveis para oferecer uma avaliação de saúde completa para os colaboradores, contando com uma equipe de profissionais especializados. Nossos serviços incluem:"}
+                                        img={img_assis_saude}
+                                        itens={[
+                                            'Aferição de pressão arterial e glicemia: monitoramento regular para garantir o bem-estar da sua equipe.',
+                                            'Orientações sobre saúde: disponibilizamos informações e dicas sobre cuidados preventivos e hábitos saudáveis.',
+                                            'Agendamento de consultas e exames: agendamento de consultas e exames no melhor dia e horário para sua equipe.'
+                                        ]} />
                                 </div>
 
                                 <div>
@@ -109,11 +111,11 @@ export default function ProgramasPage() {
                         max={3}
                     />
 
-                    <ImgWave2 src={img_wave}  />
                     <ButtonProgramas>Quero conversar com um especialista.</ButtonProgramas>
-
+                    <ImgWave2 backgroundImage={img_wave} />
                 </Wrapper>
             </BackgroundFullDefault>
+           
         </>
     )
 }

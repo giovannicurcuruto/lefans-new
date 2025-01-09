@@ -1,23 +1,33 @@
 import styled from "styled-components";
 
+
 export const CardContainer = styled.div<{ expanded: boolean}>`
   background-color: #e9e9e0;
-  border-radius: 20px;
-  padding: 20px;
-  width: 350px;
-  height: ${({ expanded }) => (expanded ? "500px" : "200px")};
+  border-radius: 100px;
+  width: 500px;
+  //height: ${({ expanded }) => (expanded ? "1000px" : "630px")};
+  min-height: 630px;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom:${({ expanded }) => (expanded ? "130px" : "0px")};
+  padding-top:${({ expanded }) => (expanded ? "130px" : "0px")};
   justify-content: ${({ expanded }) => (expanded ? "flex-start" : "center")};
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: height 0.3s ease;
 `;
 
+export const WrappedCard = styled.div`
+  display: grid;
+  place-items: center;
+`;
+
 export const Icon = styled.img`
-  width: 100px;
-  height: 100px;
+  width: 288px;
+  height: 270px;
   margin-bottom: 20px;
+  
 `;
 
 export const Text = styled.div`
@@ -26,6 +36,16 @@ export const Text = styled.div`
   color: #333;
   text-align: center;
   margin-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  
+
+  strong{
+    font-size: 34px;
+  }
+  p{
+    font-size: 19px;
+  }
 `;
 
 export const List = styled.ul`
@@ -41,16 +61,18 @@ export const List = styled.ul`
 `;
 
 export const ExpandButton = styled.button`
-  margin-top: 20px;
-  padding: 5px 10px;
+  margin-top: -70px;
+  
+    
   font-size: 18px;
   border: none;
   border-radius: 50%;
-  background-color: #333;
-  color: white;
+  background-color: var(--secondary-color);
+  color: var(--main-background-color);
+  font-size: 150px;
   cursor: pointer;
-  width: 40px;
-  height: 40px;
+  width: 128px;
+  height: 128px;
   display: flex;
   align-items: center;
   justify-content: center;
