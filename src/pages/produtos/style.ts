@@ -12,6 +12,8 @@ export const BackgroundFullDefault = styled.div`
     background-color: var(--main-background-color);
     height: 2630px;
     border-radius: 0 0 300px 0;
+
+    
 `;
 
 export const BackgroundImageDefault = styled.div<BackgroundTestProps>`    
@@ -25,6 +27,11 @@ export const BackgroundImageDefault = styled.div<BackgroundTestProps>`
 export const Wrapped = styled.div`
     padding-left: 198px; 
     padding-right: 80px;
+
+    @media (max-width: 768px) {        
+        padding-left: 35px; 
+        padding-right: 20px;
+    }
 `;
 
     
@@ -41,6 +48,22 @@ export const MainText = styled.div`
     p {
         font-size: 30px;
         padding-bottom: 55px;
+    }
+
+    @media (max-width: 768px) {        
+        padding-top: 50px;
+        max-width: 100%; 
+        width: 100%;
+
+        h2 {
+            font-size: 28px;
+            
+        }
+
+        p {
+            font-size: 17px;
+            padding-bottom: 20px;
+        }
     }
 
 `;
