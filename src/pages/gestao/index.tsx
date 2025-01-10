@@ -7,6 +7,7 @@ import {
 } from "./style";
 
 import img1 from '../../assets/fluxofull.png';
+import img1_mobile from '../../assets/fluxofullmenor.png';
 
 
 export default function GestaoPage() {
@@ -18,7 +19,7 @@ export default function GestaoPage() {
             <h2> Pague o justo, sem surpresas na renovação. </h2>
             <p>Oferecemos um serviço de gestão e consultoria conjunta de planos de saúde, que analisa dados e foca ações na prevenção e bem-estar do colaborador para consequente redução de sinistralidades. Dessa forma, sua empresa pode realizar a renovação ou adequações do plano de saúde corporativo ideal, de acordo com dados reais de utilização.</p>
           </MainText>
-          <ContainerImage backgroundImage={img1}>
+          <ContainerImage backgroundImage={img1} backgroundImageMobile={img1_mobile}>
           </ContainerImage>
 
           <DivButton>

@@ -35,30 +35,31 @@ export default function HomePage() {
                                 <p>A Lefan trabalha de forma integral identificando gerenciando e acompanahdno riscos relacionados à saúde corporativa, de pessoas e de patrimónios.</p>
                                 <p>Atuamos de forma estratégica, gerando indicadores para uma melhor tomada de decisão, com foco em mapear as reais necessidades para sua empresa. </p>
                                 <div>
-                                    <ButtonBlue>Se você é profissional de RH, <br/> ENTRE EM CONTATO!</ButtonBlue>
+                                    <ButtonBlue>Se você é profissional de RH, <br /> ENTRE EM CONTATO!</ButtonBlue>
                                 </div>
                             </MidText>
                             <ImgCris src={foto1} />
                         </MidGrid>
                         <LastGrid>
-                            <ImgGrafico src={grafico1}/>
+                            <ImgGrafico src={grafico1} />
                             <GridMediumGrafico>
                                 <div>
                                     <h3>Decisões baseadas em dados</h3>
                                 </div>
                                 <div>
-                                    Nosso objetivo é entregar soluções completas em Planos de Saúde e Seguros, com relatórios personalizados e dashboards intuitivos para insights entratégicos e redução de custos.
+                                    <p>
+                                        Nosso objetivo é entregar soluções completas em Planos de Saúde e Seguros, com relatórios personalizados e dashboards intuitivos para insights entratégicos e redução de custos.
+                                    </p>
                                 </div>
-                                <div>                                    
-                                    Os dados fornecidos ajudam na tomada de decisão e na prevenção de perdas de investimentos, tornando o plano de saúde da sua empresa mais sustentável
+                                <div>
+                                    <p>
+                                        Os dados fornecidos ajudam na tomada de decisão e na prevenção de perdas de investimentos, tornando o plano de saúde da sua empresa mais sustentável
+                                    </p>
                                 </div>
                                 <div>
                                     <LastButton> Mande uma mensagem agora!</LastButton>
                                 </div>
                             </GridMediumGrafico>
-
-
-
 
                         </LastGrid>
 

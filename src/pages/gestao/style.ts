@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 interface ContainerImageProps {
-  backgroundImage: string
+  backgroundImage: string,
+  backgroundImageMobile?: string
 }
 
 export const MainText = styled.div`
@@ -20,15 +21,33 @@ export const MainText = styled.div`
     font-size: 29px;
     font-style: italic;
   }
+
+  @media (max-width: 768px) { 
+    padding-top: 50px;
+    padding-bottom: 0; 
+    text-align: center;
+
+    h2{
+      font-size: 30px;      
+    }
+
+    p{
+      font-size: 17px;      
+    }
+  }  
 `;
 
 export const BackgroundFullDefault = styled.div`
   background-color: var(--main-background-color);
   border-radius: 0 0 250px 0;
+
+  
+  @media (max-width: 768px) {        
+    border-radius: 0 0 120px 0;
+  }
 `;
 
 export const Wrapped = styled.div`
-
   padding-left: 135px;
   padding-right: 135px;
   
@@ -41,12 +60,25 @@ export const Wrapped = styled.div`
       font-size: 32px;
     }
 
+    @media (max-width: 768px) {        
+      padding-left: 35px;
+      padding-right: 20px;    
+
+      button{
+        margin-top: 30px;
+        margin-bottom: 100px;
+        font-size: 17px;
+      }
+    }
+
 `;
 
 export const DivButton = styled.div`
   display: grid;
   place-items: center;
   width:100%;
+
+
 `;
 
 export const ContainerImage = styled.div<ContainerImageProps>`
@@ -54,6 +86,13 @@ export const ContainerImage = styled.div<ContainerImageProps>`
   background-image: url(${(props) => props.backgroundImage});
   height: 2534.675px;
   background-repeat: no-repeat;
+
+  @media (max-width: 768px) {        
+    background-size: 100%;
+    background-image: url(${(props) => props.backgroundImageMobile});
+    height: 650px;
+  }
+
 `;
 
 export const NumDiv1 = styled.div`

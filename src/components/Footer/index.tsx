@@ -14,7 +14,7 @@ export default function FooterComponent() {
                         R. Comendador Clementino, 344 - Centro
                     </div>
                     <div>
-                        contato@lefanseguros.com.br/administrativo@lefanseguros.com.br
+                        contato@lefanseguros.com.br/<span>administrativo@lefanseguros.com.br</span>
                     </div>
                     <div>
                         WhatsApp: (92) 99404-7322/ Fixo: (92) 3085-7936
