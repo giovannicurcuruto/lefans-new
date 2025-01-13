@@ -16,6 +16,10 @@ export const Wrapper = styled.div`
     //position: relative;    
     height: 1900px;
     background-color: var(--main-background-color);
+
+    @media (max-width: 768px) {
+      height: auto;
+    }
 `;
 
 export const MainText = styled.div`
@@ -33,6 +37,17 @@ export const MainText = styled.div`
         font-size: 29px;
         
     }
+
+    @media (max-width: 768px) {
+        padding: 30px;
+        text-align: center;
+        h3 {
+            font-size: 30px;
+        }
+        p {
+            font-size: 17px;
+        }
+    }
     
 `;
 
@@ -40,6 +55,11 @@ export const MainText = styled.div`
 export const DivSlider = styled.div`
     padding-left: 125px;
     padding-bottom: 195px;
+
+    @media (max-width: 768px) {
+      padding-left: 0px;
+      padding-bottom: 95px;
+    }
 
 `;
 
@@ -102,16 +122,26 @@ export const InputStyled = styled.input.attrs({
       background: #0c294e;
       border-radius: 4px;
     }
+
+    @media (max-width: 768px) {
+      display: none;
+    }
   `;
 
-export const ButtonProgramas = styled.button`
-    
+export const ButtonProgramas = styled.button`    
     bottom: 510px;    
     margin-left: 115px;
     border-radius: 25px;
     font-size:37px;
     font-style: italic;
     color: var(--main-background-color);
+
+    @media (max-width: 768px) {
+      margin-left: 20px;
+      margin-right: 20px;
+      font-size: 25px;
+      margin-bottom: 70px;
+    }
   `;
 
 export const ImgWave1 = styled.div<BackgroundWave>`    
@@ -123,6 +153,10 @@ export const ImgWave1 = styled.div<BackgroundWave>`
     width: 100%;
     height: 782px;
     top: 250px;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
     
   `;
   
@@ -135,5 +169,9 @@ export const ImgWave1 = styled.div<BackgroundWave>`
   width: 100%;
   height: 782px;
   top: calc(100% + 650px);
+
+  @media (max-width: 768px) {
+    display: none;
+  }
   
 `;

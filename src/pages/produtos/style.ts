@@ -13,6 +13,10 @@ export const BackgroundFullDefault = styled.div`
     height: 2630px;
     border-radius: 0 0 300px 0;
 
+    @media (max-width: 768px) {
+        height: 3500px;
+        border-radius: 0 0 100px 0;
+    }
     
 `;
 
@@ -70,13 +74,19 @@ export const MainText = styled.div`
 
 export const Item1 = styled.div`
     padding-top: 100px;
-    
+    padding-bottom: 85px;  
     h3{
         font-size: 53px;
         color: var(--secondary-color);
     }
 
-    padding-bottom: 85px;  
+    @media (max-width: 768px) {
+        padding-top: 50px;
+
+        h3{
+            font-size: 30px;
+        }
+    }
 
 `;
 
@@ -95,15 +105,35 @@ export const GridItem1 = styled.div`
         margin: 0 auto;
     }
 
+    @media (max-width: 768px) {
+        grid-template-columns: none;
+        grid-template-rows: 1fr 2fr;        
+        font-size: 20px;
+
+        ul{
+            padding-top:50px;
+        }        
+    }
+
 `;
 
 export const Item12 = styled.div`
+    padding-bottom: 85px;
+
     h3{
         font-size: 53px;
         color: var(--secondary-color);
     }
 
-    padding-bottom: 85px;
+    
+
+    @media (max-width: 768px) {
+        padding-top: 50px;
+
+        h3{
+            font-size:  27px;
+        }
+    }
 
 `;
 
@@ -135,6 +165,24 @@ export const Item22 = styled.div<BackgroundLinhaProps>`
         font-style: italic;
         color: var(--main-background-color);
     }
+
+    @media (max-width: 768px) {
+        padding-left: 0; 
+        padding-top: 50px;  
+          
+
+        h3{
+            text-align: center;
+            font-size: 35px;
+        }
+
+        ul{
+            font-size: 20px;
+        }
+        button{
+            font-size: 25px;
+        }
+    }
     
 `;
 
@@ -142,5 +190,22 @@ export const Item22 = styled.div<BackgroundLinhaProps>`
 export const ImgWave = styled.img`
     position: absolute;
     top: 1900px;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
 `;
 
+export const Separator = styled.div`
+    display: none;
+
+    @media (max-width: 768px) {     
+        display: block;
+        width: 100%;
+        height: 5px;
+        background-color: var(--secondary-color);
+        margin: 0 auto;
+        
+        
+    }
+`;

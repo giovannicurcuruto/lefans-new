@@ -16,6 +16,12 @@ export const CardContainer = styled.div<{ expanded: boolean}>`
   justify-content: ${({ expanded }) => (expanded ? "flex-start" : "center")};
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: height 0.3s ease;
+
+  @media (max-width: 768px) {
+    border-radius: 50px;
+    width: 300px;
+    min-height: 450px;
+  }
 `;
 
 export const WrappedCard = styled.div`
@@ -28,6 +34,10 @@ export const Icon = styled.img`
   height: 270px;
   margin-bottom: 20px;
   
+  @media (max-width: 768px) {
+    width: 150px;
+    height: 150px;
+  }
 `;
 
 export const Text = styled.div`
@@ -45,6 +55,12 @@ export const Text = styled.div`
   }
   p{
     font-size: 19px;
+  }
+
+  @media (max-width: 768px) {
+    strong{
+      font-size: 22px;
+    }
   }
 `;
 
@@ -80,5 +96,12 @@ export const ExpandButton = styled.button`
 
   &:hover {
     background-color: #555;
+  }
+
+  @media (max-width: 768px) {
+    margin-top: -50px;
+    font-size: 80px;
+    width: 100px;
+    height: 100px;
   }
 `;

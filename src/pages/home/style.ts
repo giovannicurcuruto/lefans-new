@@ -269,7 +269,7 @@ export const LastButton = styled.button`
     color: var(--main-background-color);
 
     @media (max-width: 768px) {
-        font-size: 25px;
+        font-size: 20px;
     }
 `;
 

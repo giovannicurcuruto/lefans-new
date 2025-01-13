@@ -1,4 +1,4 @@
-import { BackgroundFullDefault, BackgroundImageDefault, GridItem1, ImgWave, Item1, Item12, Item22, MainText, Wrapped } from "./style";
+import { BackgroundFullDefault, BackgroundImageDefault, GridItem1, ImgWave, Item1, Item12, Item22, MainText, Separator, Wrapped } from "./style";
 import img_heart from '../../assets/mao_coracao.png';
 import img_dente from '../../assets/dente.png';
 import img_chuva from '../../assets/pessoas_chuva.png';
@@ -20,11 +20,7 @@ export default function ProdutosPage() {
                         <p>Como pilar estratégico, oferecemos produtos e serviços que garantem o melhor relação custo-beneficioo. Conheça: </p>
 
                     </MainText>
-
-
                 </Wrapped>
-
-
                 <BackgroundImageDefault backgroundImage={img1}>
                     <Wrapped>
                         <Item1>
@@ -80,6 +76,7 @@ export default function ProdutosPage() {
                                 </div>
                             </GridItem1>
                         </Item12>
+                        <Separator></Separator>
                         <Item22 backgroundImage={img_linha}>
                             <h3>Diferenciais Competitivos</h3>
                             <ul>
@@ -94,11 +91,6 @@ export default function ProdutosPage() {
                         </Item22>
                     </Wrapped>
                     <ImgWave src={img_linha}></ImgWave>
-
-
-
-
-
 
                 </BackgroundImageDefault>
             </BackgroundFullDefault>
