@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
 export const GridCounterdiv = styled.div`
@@ -14,6 +15,20 @@ export const GridCounterdiv = styled.div`
     h3{
         font-size: 48px;
     }
+
+    @media (max-width: 768px) {
+        grid-template-columns: none;
+        grid-template-rows: 2fr 1fr 1fr;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+
+        h3{
+            
+            font-size: 35px;
+            padding-bottom: 15px;
+        }
+    }
 `;
 
 export const Itemdiv = styled.div`
@@ -22,4 +37,20 @@ export const Itemdiv = styled.div`
     h4{
         font-size: 24px;
     }
+
+    @media (max-width: 768px) {
+        h4{
+            font-size: 17px;
+        }
+    }
 `
+
+export const StyledMotionDiv = styled(motion.div)`
+    font-size: 55px;
+    font-weight: bold;
+    color: #BE945E;
+
+    @media (max-width: 768px) {
+        font-size: 35px;
+    }
+`;
